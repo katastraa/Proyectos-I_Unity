@@ -5,6 +5,8 @@ using UnityEngine;
 public class TelevisorScript : MonoBehaviour
 {
     public int canal;
+    public List<GameObject> canales;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,23 @@ public class TelevisorScript : MonoBehaviour
         canal = 1 + canal % 10;
     }
 
-    public void Restar()//esto no furula pero weno lo intenta
+    public void Restar()
     {
-        canal = 1 - canal % 10;
+        canal = (canal == 1) ? 10 : canal - 1;
     }
+
+    public void ActualizarCanal()
+    {
+        // Desactivar todos los canales
+        foreach (GameObject canalObj in canales)
+        {
+            canalObj.SetActive(false);
+        }
+
+        // Activar solo el canal correspondiente
+        canales[canal - 1].SetActive(true);
+    }
+
+
 
 }

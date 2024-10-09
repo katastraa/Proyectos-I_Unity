@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canal: 0
+  canales: []
 --- !u!4 &325118495
 Transform:
   m_ObjectHideFlags: 0
