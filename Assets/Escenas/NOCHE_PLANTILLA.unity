@@ -1704,6 +1704,7 @@ MonoBehaviour:
     posicionVector: 3
     frases:
     - No sabes el peligro que corres estando aqui...
+  dialogosAlternativos: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &500626792
@@ -2649,6 +2650,7 @@ MonoBehaviour:
     - "\xBFPero me dar\xEDas esa hoja?"
     - Siento el frio como si fueran agujas clavandose en mi piel
     - A lo mejor me puedo vendar la herida...
+  dialogosAlternativos: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &631931722
@@ -3918,7 +3920,7 @@ GameObject:
   - component: {fileID: 1002810103}
   - component: {fileID: 1002810104}
   m_Layer: 0
-  m_Name: Ricardo
+  m_Name: Ricardo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3965,6 +3967,19 @@ MonoBehaviour:
     - "Es facil perderse en la oscuridad, yo podr\xEDa guiarte"
     - "No quiero que algo tan peque\xF1o y delicioso se pierda..."
     - (AYYYYYYY ME QUIERE MORDER!!!!)
+  dialogosAlternativos:
+  - nombrePersonaje: Ricardo
+    modoDialogo: 3
+    posicionVector: 1
+    frases:
+    - cowabunga
+  - nombrePersonaje: Ricardo
+    modoDialogo: 3
+    posicionVector: 1
+    frases:
+    - 'wanamechaindesama
+
+      inthewarbisaun'
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1006527730
@@ -4009,7 +4024,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 878d7b959a75f0d4bb25c9a2744abd08, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4761,7 +4776,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1002810104}
         m_TargetAssemblyTypeName: DialogoTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogo
+        m_MethodName: TriggerDialogoAlter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4774,6 +4789,18 @@ MonoBehaviour:
       - m_Target: {fileID: 880375367}
         m_TargetAssemblyTypeName: EscenaManager, Assembly-CSharp
         m_MethodName: AddContador
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1002810104}
+        m_TargetAssemblyTypeName: DialogoTrigger, Assembly-CSharp
+        m_MethodName: DialogAlterSiguente
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6131,6 +6158,7 @@ MonoBehaviour:
     posicionVector: 8
     frases:
     - -BRUMM-
+  dialogosAlternativos: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1612170804
@@ -6327,6 +6355,18 @@ MonoBehaviour:
       - m_Target: {fileID: 880375367}
         m_TargetAssemblyTypeName: EscenaManager, Assembly-CSharp
         m_MethodName: AddContador
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1002810104}
+        m_TargetAssemblyTypeName: DialogoTrigger, Assembly-CSharp
+        m_MethodName: DialogAlterSiguente
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

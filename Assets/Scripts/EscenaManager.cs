@@ -44,12 +44,16 @@ public class EscenaManager : MonoBehaviour {
 
     private void EventosEscena() {  // Codigo aquí super-hardcoded
         switch(escena){
-            case 0: // mañana
+            case 0: // Escena: Planta baja
+                ///// <=
                 break;  
-            case 1: // tarde
+            case 1: // Escena: Piso 2
                 break;
-            case 2: // noche
-                if (contadorCambios >= 2){
+            case 2: // Escena: Piso 4
+                if (contadorCambios >= 2) {
+
+                    //dialgoRicardo = dialogoR_2;
+                    
                     contadorCambios++;
                     if (contadorCambios == 6) {
                         screamerLechuza.TriggerDialogo();
