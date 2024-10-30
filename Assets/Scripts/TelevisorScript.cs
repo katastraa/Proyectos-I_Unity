@@ -1,16 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TelevisorScript : MonoBehaviour
 {
     public int canal = 1;
-   
     public List<GameObject> canales;
+
+    public Button Izquierda;
+    public Button Derecha;
+    public Button OnButton;
+    public Button OffButton;
 
     // Start is called before the first frame update
     void Start()
     {
+        Izquierda.enabled = false;
+        Derecha.enabled = false;
+
         if (canales == null || canales.Count == 0)
         {
             Debug.LogError("No hay canales asignados en la lista.");
@@ -23,7 +31,7 @@ public class TelevisorScript : MonoBehaviour
             canalObj.SetActive(false);
         }
 
-        canales[canal - 1].SetActive(true);
+        canales[canal - 1].SetActive(false);
         Debug.Log("Canal inicial: " + canal);
     }
 
@@ -67,8 +75,26 @@ public class TelevisorScript : MonoBehaviour
         // Activar solo el canal correspondiente
         canales[canal - 1].SetActive(true);
         Debug.Log("Canal activado: " + canal);
+
+        
     }
 
+    public void On ()
+    {
+        canales[canal - 1].SetActive(true);
+        Izquierda.enabled = true;
+        Derecha.enabled = true;
+        OnButton.gameObject.SetActive(false);
+        OffButton.gameObject.SetActive(true);
+    }
 
+    public void Off()
+    {
+        canales[canal - 1].SetActive(false);
+        Izquierda.enabled = false;
+        Derecha.enabled = false;
+        OnButton.gameObject.SetActive(true);
+        OffButton.gameObject.SetActive(false);
+    }
 
-}
+} 
