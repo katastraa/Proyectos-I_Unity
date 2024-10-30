@@ -74,9 +74,7 @@ public class TelevisorScript : MonoBehaviour
 
         // Activar solo el canal correspondiente
         canales[canal - 1].SetActive(true);
-        Debug.Log("Canal activado: " + canal);
-
-        
+        Debug.Log("Canal activado: " + canal); 
     }
 
     public void On ()
@@ -96,5 +94,4 @@ public class TelevisorScript : MonoBehaviour
         OnButton.gameObject.SetActive(true);
         OffButton.gameObject.SetActive(false);
     }
-
 } 
