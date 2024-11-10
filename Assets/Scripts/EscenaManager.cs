@@ -5,18 +5,18 @@ using UnityEngine;
 public class EscenaManager : MonoBehaviour {
 
     public GameObject[] navegaciones, objetosEnEscena, fondos;
-    
-    public GameObject UI_Dialogos, UI_Opciones;
+
+    public GameObject UI_Dialogos;
 
     public void AlterDialogoNavegacion(){
         UI_Dialogos.SetActive(!UI_Dialogos.activeSelf);
-        UI_Opciones.SetActive(!UI_Opciones.activeSelf);
+      //UI_Opciones.SetActive(!UI_Opciones.activeSelf);
 
         navegaciones[lastPos].SetActive(!navegaciones[lastPos].activeSelf);
         objetosEnEscena[lastPos].SetActive(!objetosEnEscena[lastPos].activeSelf);
     }
+    public int lastPos = 0;
 
-    int lastPos = 0;
     public int pos = 0;
     void Intercambiar(int posicion, int lastPosicion){
         fondos[lastPosicion].gameObject.SetActive(false);
@@ -40,32 +40,42 @@ public class EscenaManager : MonoBehaviour {
         this.pos = posicion;
     }
 
+
     public void AddContador() {contadorCambios++;}
 
-    private void EventosEscena() {  // Codigo aquí super-hardcoded
+    public TelevisorScript Televisión;
+    public DialogoTrigger Dialogodelatele;
+    public void EventosEscena() {  // Codigo aquí super-hardcoded
         switch(escena){
             case 0: // Escena: Planta baja
                 ///// <=
                 break;  
-            case 1: // Escena: Piso 2
+            case 1: // Escena: televisión
+
+                if(Televisión.todosloscanales)
+                {
+                 
+                    Dialogodelatele.TriggerDialogo();
+                }
+
                 break;
             case 2: // Escena: Piso 4
-                if (contadorCambios >= 2) {
+                // if (contadorCambios >= 2) {
 
                     //dialgoRicardo = dialogoR_2;
                     
-                    contadorCambios++;
-                    if (contadorCambios == 6) {
-                        screamerLechuza.TriggerDialogo();
-                        murcielagoRicardoBye.SetActive(false);
-                        lechuzaBye.SetActive(false);
-                        erizoSpineteHello.SetActive(true);
-                        if (musicaMiedo != null) {
-                            SoundManager.instancia.StopMusica();
-                            SoundManager.instancia.PlayMusica(musicaMiedo);
-                        }
-                    }
-                }
+                   // contadorCambios++;
+                   // if (contadorCambios == 6) {
+                      //  screamerLechuza.TriggerDialogo();
+                       // murcielagoRicardoBye.SetActive(false);
+                        // lechuzaBye.SetActive(false);
+                        // erizoSpineteHello.SetActive(true);
+                        // if (musicaMiedo != null) {
+                        //     SoundManager.instancia.StopMusica();
+                        //    SoundManager.instancia.PlayMusica(musicaMiedo);
+                       // }
+                   // }
+               // }
                 break;
             case 3: // final
                 break;
@@ -90,6 +100,11 @@ public class EscenaManager : MonoBehaviour {
 
     public void SiguienteEscena() {
         salirSiguienteEscena = true;
+    }
+
+    public void CargarEscena(int NuevaEscena)
+    {
+        MainManager.instancia.LoadSceneIndex(NuevaEscena);
     }
 
     public void ReiniciarJuego() {

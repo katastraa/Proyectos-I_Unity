@@ -7,11 +7,13 @@ public class TelevisorScript : MonoBehaviour
 {
     public int canal = 1;
     public List<GameObject> canales;
-
+    private bool[] Comprobacion;
     public Button Izquierda;
     public Button Derecha;
     public Button OnButton;
     public Button OffButton;
+    public bool todosloscanales = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,14 +27,20 @@ public class TelevisorScript : MonoBehaviour
             return; // Salir si no hay canales
         }
 
+        Comprobacion = new bool[canales.Count];
+
         // Desactivar todos los canales al inicio
-        foreach (GameObject canalObj in canales)
+        for (int i=0; i<canales.Count; i++)
         {
+            GameObject canalObj = canales[i];
             canalObj.SetActive(false);
+            Comprobacion[i] = false;
         }
 
         canales[canal - 1].SetActive(false);
         Debug.Log("Canal inicial: " + canal);
+        Comprobacion[canal - 1] = true;
+        todosloscanales = false;
     }
 
     // Update is called once per frame
@@ -45,8 +53,7 @@ public class TelevisorScript : MonoBehaviour
     {
         canal = (canal % canales.Count) + 1;
         //canal = 1 + canal % 10;
-        Debug.Log("Canal después de sumar: " + canal);
-
+       
         ActualizarCanal();
     }
 
@@ -54,7 +61,7 @@ public class TelevisorScript : MonoBehaviour
     {
 
         canal = (canal == 1) ? 10 : canal - 1;
-        Debug.Log("Canal después de restar: " + canal);
+        
         ActualizarCanal();
     }
 
@@ -74,7 +81,21 @@ public class TelevisorScript : MonoBehaviour
 
         // Activar solo el canal correspondiente
         canales[canal - 1].SetActive(true);
-        Debug.Log("Canal activado: " + canal); 
+        Debug.Log("Canal activado: " + canal);
+        Comprobacion[canal - 1] = true;
+
+        bool auxiliar = true;
+        
+        for (int i = 0; i < canales.Count; i++)
+        {
+            auxiliar &= Comprobacion[i];
+        }
+        
+        if (auxiliar)
+        {
+            
+            todosloscanales = true;
+        }
     }
 
     public void On ()

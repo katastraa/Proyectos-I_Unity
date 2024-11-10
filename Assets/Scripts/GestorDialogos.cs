@@ -74,7 +74,7 @@ public class GestorDialogos : MonoBehaviour {
             campoDialogoUI.text += caracter;
             float tiempoEspera = Random.Range( 0.8f*segundosPorCaracter, 1.2f*segundosPorCaracter );
 
-            SoundManager.instancia.RandomSoundDialogue(sonidosHablar);
+          SoundManager.instancia.RandomSoundDialogue(sonidosHablar);
             
             yield return new WaitForSeconds(tiempoEspera);
         }
