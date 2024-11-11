@@ -49,6 +49,14 @@ public class TelevisorScript : MonoBehaviour
         
     }
 
+    public void desactivarbotones()
+    {
+       Izquierda.gameObject.SetActive(false);
+       Derecha.gameObject.SetActive(false);
+        OnButton.gameObject.SetActive(false);
+        OffButton.gameObject.SetActive(false);
+    }
+
    public void Sumar()
     {
         canal = (canal % canales.Count) + 1;

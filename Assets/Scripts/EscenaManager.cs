@@ -40,11 +40,11 @@ public class EscenaManager : MonoBehaviour {
         this.pos = posicion;
     }
 
-
     public void AddContador() {contadorCambios++;}
 
     public TelevisorScript Televisión;
     public DialogoTrigger Dialogodelatele;
+    
     public void EventosEscena() {  // Codigo aquí super-hardcoded
         switch(escena){
             case 0: // Escena: Planta baja
@@ -54,8 +54,8 @@ public class EscenaManager : MonoBehaviour {
 
                 if(Televisión.todosloscanales)
                 {
-                 
                     Dialogodelatele.TriggerDialogo();
+                    Televisión.desactivarbotones();
                 }
 
                 break;
