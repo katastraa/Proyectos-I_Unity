@@ -18,6 +18,9 @@ public class GestorDialogos : MonoBehaviour {
     public AudioClip[] sonidosHablar;
     public GameObject botonPasar, botonFinal;
     public EscenaManager escenaManager;
+    public float valoranterior;
+
+   
 
     void Awake() {
 
@@ -51,6 +54,8 @@ public class GestorDialogos : MonoBehaviour {
         botonPasar.SetActive(false);
         botonFinal.SetActive(false);
     }
+
+    
 
 
     public void SacarSiguienteFrase(){ // bool limpiarCuadroDialogo, bool desactivarCuadroDialogo
