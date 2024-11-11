@@ -12,6 +12,7 @@ public class TelevisorScript : MonoBehaviour
     public Button Derecha;
     public Button OnButton;
     public Button OffButton;
+    public Button Cerrar;
     public bool todosloscanales = false;
 
 
@@ -20,6 +21,8 @@ public class TelevisorScript : MonoBehaviour
     {
         Izquierda.enabled = false;
         Derecha.enabled = false;
+        Cerrar.gameObject.SetActive(false);
+        
 
         if (canales == null || canales.Count == 0)
         {
@@ -55,6 +58,7 @@ public class TelevisorScript : MonoBehaviour
        Derecha.gameObject.SetActive(false);
         OnButton.gameObject.SetActive(false);
         OffButton.gameObject.SetActive(false);
+        Cerrar.gameObject.SetActive(true);
     }
 
    public void Sumar()
