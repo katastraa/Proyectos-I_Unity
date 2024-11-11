@@ -838,7 +838,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "DI\xC1LOGO\nDI\xC1LOGODI\xC1LOGODI\xC1LOGODI\xC1LOGODI\xC1LOGOakasdf"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e85b249f24150648857a7b5082b5a61, type: 2}
   m_sharedMaterial: {fileID: -3757403935567206851, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -863,8 +863,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180
-  m_fontSizeBase: 180
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &443474343
@@ -1956,7 +1956,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: PERSONAJE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e85b249f24150648857a7b5082b5a61, type: 2}
   m_sharedMaterial: {fileID: -3757403935567206851, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1981,8 +1981,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180
-  m_fontSizeBase: 180
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2020,7 +2020,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &884084117
@@ -2432,7 +2432,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e85b249f24150648857a7b5082b5a61, type: 2}
   m_sharedMaterial: {fileID: -3757403935567206851, guid: ec5e58e21167ce441b358bfe92d63f88, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1114736081
@@ -4050,7 +4050,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
