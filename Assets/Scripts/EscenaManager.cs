@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EscenaManager : MonoBehaviour {
 
@@ -44,10 +45,9 @@ public class EscenaManager : MonoBehaviour {
 
     public TelevisorScript Televisión;
     public DialogoTrigger Dialogodelatele;
-    
     public void EventosEscena() {  // Codigo aquí super-hardcoded
         switch(escena){
-            case 0: // Escena: Planta baja
+            case 0: // Pantalla de inicio
                 ///// <=
                 break;  
             case 1: // Escena: televisión
@@ -59,7 +59,7 @@ public class EscenaManager : MonoBehaviour {
                 }
 
                 break;
-            case 2: // Escena: Piso 4
+            case 2: // Escena: Mi piso
                 // if (contadorCambios >= 2) {
 
                     //dialgoRicardo = dialogoR_2;
@@ -76,6 +76,7 @@ public class EscenaManager : MonoBehaviour {
                        // }
                    // }
                // }
+
                 break;
             case 3: // final
                 break;
