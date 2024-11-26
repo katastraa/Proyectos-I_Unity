@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Escenas/Piso.unity
     guid: 08c6a9f52f89b7b42a958d1306d1576a
   - enabled: 1
-    path: "Assets/Escenas/Hall 1\xBA Planta.unity"
+    path: "Assets/Escenas/Hall 1\xBA Planta A.unity"
     guid: ae5b274f992a93c4b87b5a8a5df85dbe
+  - enabled: 1
+    path: "Assets/Escenas/Hall 1\xBA Planta B.unity"
+    guid: fc45d7f6bcf64a74380143d8af58e2a9
   m_configObjects: {}
