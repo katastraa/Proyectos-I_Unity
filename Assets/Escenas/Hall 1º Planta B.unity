@@ -3821,7 +3821,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5685,6 +5685,7 @@ MonoBehaviour:
     posicionVector: 5
     frases:
     - "kiero zal\xED a juga\xB4ar furb\xF3 peho la mama nome deha"
+    - Dise ke eta' er diablo afuera
     - "Io creo que le da envidia ke soi meh\xF3 ke er bicho"
     - SIUUUUUUUUUUUUUUU
   - nombrePersonaje: Kike
