@@ -58,6 +58,10 @@ public class TelevisorScript : MonoBehaviour
        Derecha.gameObject.SetActive(false);
         OnButton.gameObject.SetActive(false);
         OffButton.gameObject.SetActive(false);
+        //Cerrar.gameObject.SetActive(true);
+    }
+    public void SalirTelevisión ()
+    {
         Cerrar.gameObject.SetActive(true);
     }
 
