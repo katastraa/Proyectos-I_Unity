@@ -7,6 +7,7 @@ public class MangerPiso : MonoBehaviour
 {
     public Button dialogoPuerta;
     public Button salirPuerta;
+    public GameObject tutorial;
    
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,9 @@ public class MangerPiso : MonoBehaviour
     {
         dialogoPuerta.gameObject.SetActive(false);
         salirPuerta .gameObject.SetActive(true);
+    }
+    public void desactivartutorial() 
+    { 
+        tutorial.gameObject.SetActive(false);
     }
 }

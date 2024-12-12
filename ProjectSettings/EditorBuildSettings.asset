@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Casa Abuela.unity
     guid: c131882828442294dab1a93368cae254
+  - enabled: 1
+    path: Assets/Escenas/Casa de la Pili.unity
+    guid: 4b28919f59f643047a2926b472530033
   m_configObjects: {}

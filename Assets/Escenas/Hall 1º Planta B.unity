@@ -1718,9 +1718,8 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - Ahora mismo no me interesa subir
-    - "Seguramente desde la calle se ver\xE1 el cielo"
-    - Me asomo y ya me vuelvo a casa
+    - "Pa\xB4 que voy a baj\xE1 otra ve si ya he subio"
+    - Una cosa es querer hacer cardio y otra hacer el gilipollas
   dialogosAlternativos: []
   autoCarga: 1
   autoDesactivar: 0
