@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0016dadf60bddc44381c65acfc55f2a6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7266dab6d10870940b7c2960c603979d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2448,7 +2448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0016dadf60bddc44381c65acfc55f2a6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7266dab6d10870940b7c2960c603979d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3811,7 +3811,7 @@ MonoBehaviour:
     - Ya que he subido no voy a bajar
     - Total, mi edificio tiene como mucho 4 plantas
     - Creo
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &540770303
@@ -6121,7 +6121,7 @@ MonoBehaviour:
     - "Pa eso et\xE1 la juvent\xFA"
     - "Anto\xF1ico piensa que es t\xF3 un bulo desos que dicen en la tele, cuando
       bajes ya me cuentas que se ve desde arriba"
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1007077781
@@ -6343,7 +6343,7 @@ MonoBehaviour:
     - "Est\xE1n situadas al final del pasillo\""
     - "Illo pero que dice, si la \xFAnica escalera que hay es esta."
     - Me voy a da otro voltio y si no me vuelvo a casa
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1049219049
@@ -6811,7 +6811,7 @@ MonoBehaviour:
     - Si necesita subir, acceda a las escaleras de emergencia.
     - "Est\xE1n situadas al final del pasillo\""
     - En veces la vida no es como uno quiere
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1074867682
@@ -7774,7 +7774,7 @@ MonoBehaviour:
     posicionVector: 1
     frases:
     - Si no encuentro la susodicha "escalera de emergencia" me vuelvo a casa
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1225143543
@@ -11323,7 +11323,7 @@ MonoBehaviour:
     frases:
     - ...
     - "\xBFMiau?"
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!4 &1817175436
@@ -12602,7 +12602,7 @@ MonoBehaviour:
     - A quien se le ocurre
     - Hay un cartel
     - "Desde aqu\xED no lo leo"
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &2094894878
