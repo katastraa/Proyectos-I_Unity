@@ -20,7 +20,10 @@ public class GestorDialogos : MonoBehaviour {
     public EscenaManager escenaManager;
     public float valoranterior;
 
-   
+    public void SetSegundosPorCaracter(float tiempo){
+        segundosPorCaracter = tiempo;
+        valoranterior = tiempo;
+    }
 
     void Awake() {
 
@@ -36,6 +39,7 @@ public class GestorDialogos : MonoBehaviour {
         dialogos = new Queue<string>();
         modoDialogo = new Queue<int>();
         dialogoEmpezado = false;
+        valoranterior = segundosPorCaracter;
     }
 
     public void IncluirDialogo(Dialogo dialogo) {
@@ -49,22 +53,27 @@ public class GestorDialogos : MonoBehaviour {
     
         modoDialogo.Enqueue(dialogo.modoDialogo);
 
+        sonidosHablar = dialogo.voces;
+
         escenaManager.EntrarDialogo(dialogo.posicionVector);
 
         botonPasar.SetActive(false);
         botonFinal.SetActive(false);
     }
 
-    
-
+    public void CompletarFrase() //la guarrada que esta haciendo luh pa que el flow del dialogo quede bien
+    {
+        segundosPorCaracter = 0;
+    }
 
     public void SacarSiguienteFrase(){ // bool limpiarCuadroDialogo, bool desactivarCuadroDialogo
         dialogoEmpezado = true;
 
         if (ultimaFraseCoru != null)
             StopCoroutine(ultimaFraseCoru);
-
         botonPasar.SetActive(false);
+        
+        segundosPorCaracter = valoranterior;
 
         string frase = dialogos.Dequeue();
         ultimaFraseCoru = StartCoroutine(EscribirFrase(frase));
@@ -76,10 +85,11 @@ public class GestorDialogos : MonoBehaviour {
         campoDialogoUI.text = "";
         foreach (char caracter in frase.ToCharArray())
         {
+            //botonComplertar.SetActive(true);
             campoDialogoUI.text += caracter;
             float tiempoEspera = Random.Range( 0.8f*segundosPorCaracter, 1.2f*segundosPorCaracter );
 
-          SoundManager.instancia.RandomSoundDialogue(sonidosHablar);
+            SoundManager.instancia.RandomSoundDialogue(sonidosHablar);
             
             yield return new WaitForSeconds(tiempoEspera);
         }
@@ -88,13 +98,17 @@ public class GestorDialogos : MonoBehaviour {
             FinalizarFrases(modoDialogo.Dequeue());
         }else{
             botonPasar.SetActive(true);
+            //botonComplertar.SetActive(false);
         }
 
         ultimaFraseCoru = null; // Esto debe de estar aquí siempre para no dar una excepción nullReference
     }
 
+    
+
     public void FinalizarFrases(int modo) {
         Debug.Log(modo);
+        //botonComplertar.SetActive(false) ;
         botonPasar.SetActive(false);
         if (modo == 1 || modo == 2) {   // 1 o 2
             campoDialogoUI.text = campoNombreUI.text = "";
