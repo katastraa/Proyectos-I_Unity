@@ -11,6 +11,10 @@ public class CasaDelaPili : MonoBehaviour
     public Button DialogoAbajo;
     public Button NavegacionDerecha;
     public Button NavegacionIzquierda;
+    public Button Madre2;
+    public Button Niña1;
+    public Button Niña2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +29,19 @@ public class CasaDelaPili : MonoBehaviour
 
     public void madreDialogo ()
     {
-
+        NavegacionDerecha.gameObject.SetActive(true);
+        NavegacionIzquierda.gameObject.SetActive(true);
+        DialogoDerecha.gameObject.SetActive(false);
+        DialogoAbajo.gameObject.SetActive(false);
+        Madre.gameObject.SetActive(false);
+        Madre2.gameObject.SetActive(true);
     }
 
-    public void madreCocina () 
-    { 
+    public void dialogoniña ()
+    {
+        Madre2.gameObject.SetActive(false);
+        MadreCocina.gameObject.SetActive(true);
+        Niña1.gameObject.SetActive(false);
+        Niña2.gameObject.SetActive(true);
     }
 }
