@@ -73,13 +73,15 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void RandomSoundDialogue(params AudioClip[] clips) {	// Con FuenteDialogos
-		if (clips.Length != 0){
-			int randomIndex = Random.Range(0, clips.Length);
-			float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
+		if (clips != null){
+			if (clips.Length > 0) {
+				int randomIndex = Random.Range(0, clips.Length);
+				float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
 
-			FuenteDialogos.pitch = randomPitch == null ? 1.0f : randomPitch;
-			FuenteDialogos.clip = clips[randomIndex];
-			FuenteDialogos.Play();
+				FuenteDialogos.pitch = randomPitch == null ? 1.0f : randomPitch;
+				FuenteDialogos.clip = clips[randomIndex];
+				FuenteDialogos.Play();
+			}
 		}
 	}
 	

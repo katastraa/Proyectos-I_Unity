@@ -4018,10 +4018,7 @@ MonoBehaviour:
     - "Desde aqu\xED no puedo ver nada"
     - "Ese edificio lleva abandonado una pila de a\xF1os"
     - A ver si hacen ya algo con el
-    voces:
-    - {fileID: 8300000, guid: 7c57f041a09df81468a86ecb9a793cfc, type: 3}
-    - {fileID: 8300000, guid: d8c171108b9c3e846af8146e028aab99, type: 3}
-    - {fileID: 8300000, guid: b6a2198d39ce2424e81a303b5a67a92e, type: 3}
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1033647071
@@ -5857,10 +5854,7 @@ MonoBehaviour:
     - Vaya
     - "No sab\xEDa que desde aqu\xED se ve\xEDa un edificio"
     - Desde la calle se tiene que ver bien
-    voces:
-    - {fileID: 8300000, guid: ae2044749dbfb9f4192a7a3a363fe8ef, type: 3}
-    - {fileID: 8300000, guid: ad69078c2df9ba642ae4bbc02e06c837, type: 3}
-    - {fileID: 8300000, guid: 2d42017ca3a5c194380dcfdc9e9273b5, type: 3}
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1491436997
@@ -7596,10 +7590,7 @@ MonoBehaviour:
     - Eso parece luz...
     - Pero no distingo nada
     - "\xBFYo ten\xEDa una ventana en la ba\xF1era?"
-    voces:
-    - {fileID: 8300000, guid: ae2044749dbfb9f4192a7a3a363fe8ef, type: 3}
-    - {fileID: 8300000, guid: ad69078c2df9ba642ae4bbc02e06c837, type: 3}
-    - {fileID: 8300000, guid: 2d42017ca3a5c194380dcfdc9e9273b5, type: 3}
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!4 &1817175436
@@ -8229,10 +8220,7 @@ MonoBehaviour:
     - Mmmmm
     - "Aqu\xED tampoco se v\xE9 nada..."
     - "\xBFA lo mejor desde la ventana de mi cuarto?"
-    voces:
-    - {fileID: 8300000, guid: 7c57f041a09df81468a86ecb9a793cfc, type: 3}
-    - {fileID: 8300000, guid: d8c171108b9c3e846af8146e028aab99, type: 3}
-    - {fileID: 8300000, guid: b6a2198d39ce2424e81a303b5a67a92e, type: 3}
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &2117112972
