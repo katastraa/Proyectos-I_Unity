@@ -328,7 +328,8 @@ MonoBehaviour:
     posicionVector: 1
     frases:
     - "Deber\xEDa asomarme a la ventana..."
-  dialogosAlternativos: []
+    - ertgsdfgsdg
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &171577172
