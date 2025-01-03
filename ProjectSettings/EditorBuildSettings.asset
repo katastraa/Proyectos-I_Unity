@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Escenas/Pasillo 3 planta.unity
     guid: 44db1001302f15448bf25f4d43455965
   - enabled: 1
+    path: Assets/Escenas/Puerta Piso de estudiantes.unity
+    guid: 270080cbd96882f43bf01f564626621e
+  - enabled: 1
     path: Assets/Escenas/Piso Estudiantes.unity
     guid: ac8de5282320a5549898e2f85572e1e7
   m_configObjects: {}
