@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Cielo.unity
     guid: b5dc2adaa02d6a34ab53aaff1507baaf
+  - enabled: 1
+    path: "Assets/Escenas/Cr\xE9ditos finales.unity"
+    guid: 0368581b077ef62409d4a9517c289808
   m_configObjects: {}
