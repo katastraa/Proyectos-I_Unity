@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Azotea.final.unity
     guid: e1f715fc07dd97d448d596b048fb2659
+  - enabled: 1
+    path: Assets/Escenas/Cielo.unity
+    guid: b5dc2adaa02d6a34ab53aaff1507baaf
   m_configObjects: {}
