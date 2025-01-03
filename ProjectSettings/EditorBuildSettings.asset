@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Piso Estudiantes.unity
     guid: ac8de5282320a5549898e2f85572e1e7
+  - enabled: 1
+    path: Assets/Escenas/Azotea.final.unity
+    guid: e1f715fc07dd97d448d596b048fb2659
   m_configObjects: {}
