@@ -3293,7 +3293,7 @@ MonoBehaviour:
     - "Yo creo que nos la han pinchado y nos est\xE1n poniendo propaganda pol\xEDtica"
     - ...
     - "Adi\xF3s"
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &1049219049
@@ -3682,6 +3682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navegacion: {fileID: 2117112974}
+  Kike: {fileID: 0}
+  Kike2: {fileID: 0}
 --- !u!1 &1225143543
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,24 +5551,7 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 5
     frases: []
-  dialogosAlternativos:
-  - nombrePersonaje: Kike
-    modoDialogo: 3
-    posicionVector: 5
-    frases:
-    - "kiero zal\xED a juga\xB4ar furb\xF3 peho la mama nome deha"
-    - "Io creo que le da envidia ke soi meh\xF3 ke er bicho"
-    - SIUUUUUUUUUUUUUUU
-  - nombrePersonaje: Kike
-    modoDialogo: 3
-    posicionVector: 5
-    frases:
-    - Furbo
-  - nombrePersonaje: Kike
-    modoDialogo: 3
-    posicionVector: 5
-    frases:
-    - SUUUUUUUUUUUU
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!4 &1817175436
@@ -5917,7 +5902,7 @@ MonoBehaviour:
     - Ahora mismo no me interesa subir
     - "Seguramente desde la calle se ver\xE1 el cielo"
     - Me asomo y ya me vuelvo a casa
-  dialogosAlternativos: []
+    voces: []
   autoCarga: 1
   autoDesactivar: 0
 --- !u!1 &2117112972
@@ -5938,7 +5923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2117112973
 RectTransform:
   m_ObjectHideFlags: 0
