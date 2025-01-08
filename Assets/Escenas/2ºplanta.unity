@@ -3808,9 +3808,9 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 1
     frases:
-    - Ya que he subido no voy a bajar
-    - Total, mi edificio tiene como mucho 4 plantas
-    - Creo
+    - Ya que he subido, no voy a bajar.
+    - 'Total, mi edificio tiene como mucho 4 plantas. '
+    - Creo.
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -5105,6 +5105,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &847619824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847619826}
+  - component: {fileID: 847619825}
+  m_Layer: 0
+  m_Name: "Audio Source m\xFAsica"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &847619825
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847619824}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -4847188409838147491, guid: 590424242e57e484480b7a6fe17970ad, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d709d83af787652489e17b7eb2ca0172, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &847619826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847619824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 790.90533, y: 479.21338, z: -5.4780846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &874010954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6112,15 +6240,15 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 15
     frases:
-    - "Hola. Tu eres el del primero A, \xBFverdad?"
-    - "Me dijo Anto\xF1ico que subir\xEDas"
-    - He puesto una escalera de mano en el patio que sube a casa de Pepi
-    - Es lo que el administrador de la comunidad ha llamado "escalera de emergencia"
+    - "Hola. T\xFA eres el del primero A, \xBFverdad?"
+    - "Me dijo Anto\xF1ico que subir\xEDas."
+    - He puesto una escalera de mano en el patio que sube a casa de Pili.
+    - Es lo que el administrador de la comunidad ha llamado "escalera de emergencia".
     - "Un desprop\xF3sito vamos"
-    - "Yo ya estoy mu' mayor pa ponerme a sub\xED y baja\xB4 parriba y pabajo"
-    - "Pa eso et\xE1 la juvent\xFA"
-    - "Anto\xF1ico piensa que es t\xF3 un bulo desos que dicen en la tele, cuando
-      bajes ya me cuentas que se ve desde arriba"
+    - "Yo ya estoy mu\u2019 mayor pa' ponerme a sub\xED y baja' parriba y pabajo. "
+    - "Pa' eso est\xE1 la juvent\xFA."
+    - "Anto\xF1ico piensa que es t\xF3 un bulo de esos que dicen en la tele. Cuando
+      bajes, ya me cuentas qu\xE9 se ve desde arriba."
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -6341,8 +6469,8 @@ MonoBehaviour:
     - para mejorar su experiencia en esta comunidad.
     - Si necesita subir, acceda a las escaleras de emergencia.
     - "Est\xE1n situadas al final del pasillo\""
-    - "Illo pero que dice, si la \xFAnica escalera que hay es esta."
-    - Me voy a da otro voltio y si no me vuelvo a casa
+    - "Illo, \xBFpero qu\xE9 dice? Si la \xFAnica escalera que hay es esta."
+    - "Me voy a d\xE1 otro voltio y, si no, me vuelvo a casa."
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -6806,11 +6934,10 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 16
     frases:
-    - '"Estamos haciendo reformas en el edificio'
-    - para mejorar su experiencia en esta comunidad.
+    - '"Estamos haciendo reformas en el edificio para mejorar su experiencia en esta
+      comunidad. '
     - Si necesita subir, acceda a las escaleras de emergencia.
-    - "Est\xE1n situadas al final del pasillo\""
-    - En veces la vida no es como uno quiere
+    - "Est\xE1n situadas al final del pasillo.\""
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -7773,7 +7900,7 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 1
     frases:
-    - Si no encuentro la susodicha "escalera de emergencia" me vuelvo a casa
+    - Si no encuentro la susodicha "escalera de emergencia", me vuelvo a casa.
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -10264,7 +10391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2064116d0955ec140a856e64e84e698b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FuenteDialogos: {fileID: 0}
+  FuenteDialogos: {fileID: 1514343503}
   FuenteEfectos: {fileID: 0}
   FuenteMusica: {fileID: 0}
   LowPitchRange: 0.95
@@ -12598,8 +12725,8 @@ MonoBehaviour:
     posicionVector: 1
     frases:
     - "La escalera est\xE1 cortada"
-    - "Bastante est\xFApido lo de poner una valla en una escalera"
-    - A quien se le ocurre
+    - "Bastante est\xFApido lo de poner una valla en la escalera"
+    - "\xBFA qui\xE9n se le ocurre?"
     - Hay un cartel
     - "Desde aqu\xED no lo leo"
     voces: []
@@ -12824,3 +12951,4 @@ SceneRoots:
   - {fileID: 784185939}
   - {fileID: 1514343504}
   - {fileID: 1112474990}
+  - {fileID: 847619826}

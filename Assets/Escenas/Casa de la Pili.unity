@@ -2839,11 +2839,11 @@ MonoBehaviour:
     - Ella cree que quiero tirarme por la ventana
     - Pero es mentira
     - Cuando me acerco a la ventana ella habla conmigo
-    - Y para que no lo haga manda gente a que me escuche
+    - Y para que no lo haga, manda gente a que me escuche
     - Y eso me gusta
     - "Pero me gustar\xEDa m\xE1s que viniese mi mam\xE1"
     - Bueno
-    - Realmente no me gustaria
+    - "Realmente no me gustar\xEDa"
     - "Es mejor as\xED"
     - Gracias por escucharme
     voces: []
@@ -3845,6 +3845,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1036597012}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &783714928
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4632,14 +4644,15 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - De verdad que me teneis harta tor dia subiendo tor dia bajando.
-    - "Quedarse en vuestras pu\xF1eteras casa me cago en to\xB4"
-    - Yo escalera parriba no tengo, la tienen los vecinos denfrente
-    - Pero antes de irte echame un cable por favoh
-    - "Tengo que termin\xE1 el guiso y tengo a la ni\xF1a sin vigil\xE1, asomate
-      y le hace\xB4 un poco de caso"
-    - "Pa\xB4 tenerla un rato entretenia y que no se le ocurra tirarse pa\xB4bajo."
-    - "Tar\xE1 en su cuarto, es el primero a la izquierda"
+    - "De verdad que me ten\xE9is harta, t\xF3 el d\xEDa subiendo, t\xF3 el d\xEDa
+      bajando."
+    - "Quedaos en vuestras pu\xF1eteras casas, me cago en to'."
+    - Yo escalera parriba no tengo, la tienen los vecinos de enfrente.
+    - "Pero antes de irte, \xE9chame un cable, por fav\xF3."
+    - "Tengo que termin\xE1 el guiso y tengo a la ni\xF1a sin vigil\xE1, as\xF3mate
+      y le hace' un poco de caso."
+    - "Pa' tenerla un rato entreten\xEDa y que no se le ocurra tirarse pa' abajo."
+    - "Estar\xE1 en su cuarto, es el primero a la izquierda."
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -4807,6 +4820,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1036597011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036597013}
+  - component: {fileID: 1036597012}
+  m_Layer: 0
+  m_Name: "Audio Source m\xFAsica"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1036597012
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036597011}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -4847188409838147491, guid: 590424242e57e484480b7a6fe17970ad, type: 2}
+  m_audioClip: {fileID: 8300000, guid: ca95c614e60100840be2d889a8326817, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1036597013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036597011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 790.90533, y: 479.21338, z: -5.4780846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049219049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,16 +5538,18 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - Vamo' a ve
-    - "A ti te parece de buena educaci\xF3n plantarte en la casa de uno sin salud\xE1."
-    - De verdad que me teneis harta tor dia subiendo tor dia bajando
-    - "Quedarse en vuestras pu\xF1eteras casa me cago en to\xB4"
-    - Yo escalera parriba no tengo, la tienen los vecinos denfrente
-    - Pero antes de irte echame un cable por favoh
-    - "Tengo que termin\xE1 el guiso y tengo a la ni\xF1a sin vigil\xE1, asomate
-      y le hace\xB4 un poco de caso"
-    - "Pa\xB4 tenerla un rato entretenia y que no se le ocurra tirarse pa\xB4bajo."
-    - "Tar\xE1 en su cuarto, es el primero a la izquierda"
+    - 'Vamo'' a ver, '
+    - " \xBFa ti te parece de buena educaci\xF3n plantarte en la casa de uno sin
+      salud\xE1? "
+    - "De verdad que me ten\xE9is harta, t\xF3 el d\xEDa subiendo, t\xF3 el d\xEDa
+      bajando. "
+    - "Quedaos en vuestras pu\xF1eteras casas, me cago en to'."
+    - Yo escalera parriba no tengo, la tienen los vecinos de enfrente.
+    - "Pero antes de irte, \xE9chame un cable, por fav\xF3."
+    - "Tengo que termin\xE1 el guiso y tengo a la ni\xF1a sin vigil\xE1, as\xF3mate
+      y le hace' un poco de caso."
+    - "Pa' tenerla un rato entreten\xEDa y que no se le ocurra tirarse pa' abajo."
+    - "Estar\xE1 en su cuarto, es el primero a la izquierda."
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -7502,6 +7645,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1036597012}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1390202722
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7674,7 +7829,7 @@ MonoBehaviour:
     posicionVector: 9
     frases:
     - Gracias por escucharme
-    - "Ya te puede ir, tendr\xE1s cosas que hacer"
+    - "Ya te puedes ir, tendr\xE1s cosas que hacer"
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -10068,10 +10223,10 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - Gracia por echarme un cable
-    - Lo unico bueno que tiene que el gilipollas del administrador nos haya jodio
-    - "Es que tengo ni\xF1era gratis tol dia"
-    - Y no me tengo que preocupar de estar pendiente del trasto que tengo por hija
+    - Gracias por echarme un cable.
+    - "Lo \xFAnico bueno que tiene que el gilipollas del administrador nos haya jodido
+      es que tengo ni\xF1era gratis t\xF3 el d\xEDa"
+    - y no me tengo que preocupar de estar pendiente del trasto que tengo por hija.
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -10638,6 +10793,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1036597012}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11439,8 +11606,8 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - "Hechale por favo\xB4un ojo a mi ni\xF1a"
-    - "Est\xE1 en su cuarto, la primera a la izquierda"
+    - "\xC9chale, por fav\xF3, un ojo a mi ni\xF1a."
+    - "Est\xE1 en su cuarto, la primera a la izquierda."
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -11533,3 +11700,4 @@ SceneRoots:
   - {fileID: 784185939}
   - {fileID: 1514343504}
   - {fileID: 1112474990}
+  - {fileID: 1036597013}

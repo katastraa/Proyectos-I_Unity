@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &33192156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &39523274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
     frases:
     - Zzzz
     - "\xBFHas encontrao a mi colega?"
-    - Esta en su cuarto, date un voltio y dile que me hackee el Niflix
+    - "Est\xE1 en su cuarto, date un voltio y dile que me hackee el Niflix"
     - Y luego te digo pa donde se sube pa' arriba.
     voces: []
   autoCarga: 1
@@ -3016,7 +3016,7 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 16
     frases:
-    - A donde vas
+    - "\xBFA d\xF3nde vas?"
     - "Guille est\xE1 en el sal\xF3n durmiendo"
     - Te tengo vigilao
     voces: []
@@ -5952,17 +5952,17 @@ MonoBehaviour:
     - Tio
     - Me has despertao de la siesta
     - "Me cago en to\xB4"
-    - "Que co\xF1o quiere"
-    - A eso, si, la escalera esa que puse pa' la azotea
-    - "\xBFY t\xFA pa\xB4que co\xF1o quiere sub\xED?"
-    - "\xBFPa v\xE9 lo que dicen en la tele?"
+    - "\xBFQu\xE9 co\xF1o quiere?"
+    - "Ah, eso, s\xED, la escalera esa que puse pa' la azotea"
+    - "\xBFY t\xFA pa\xB4qu\xE9 co\xF1o quiere sub\xED?"
+    - "\xBFPa ve\xB4 lo que dicen en la tele?"
     - "Illo eso es t\xF3 propaganda"
-    - "Hablando de tele antes de sub\xED hazme un fav\xF3"
+    - "Hablando de tele, antes de sub\xED hazme un fav\xF3"
     - "Ve a buscar a mi colega Luis, e un m\xE1quina y quiero que me hackee el Niflix
       en la tele"
-    - Ya tu sabe, pa' no ve la basura que ponen en la tele
+    - Ya tu sabe' , pa' no ve la basura que ponen en la tele
     - "El tio estar\xE1 en su cuarto, date un voltio que seguro que lo encuentras"
-    - Ala hasta ahora
+    - Ale'. Hasta ahora.
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -6669,13 +6669,13 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 11
     frases:
-    - "\xBFQuien ere?"
+    - "\xBFQui\xE9n ere?"
     - "\xBFQu\xE9 haces en mi cuarto?"
     - "T\xFA no eres mi gata"
     - "\xBFTe ha mandao Guille por que no se quiere levantar de la silla?"
     - "No le hagas caso, se pasa el d\xEDa viendo videos raros en el tel\xE9fono
       y fumando porros"
-    - "Se cree guay por que sac\xF3 una escalera y la puso en la terraza"
+    - "Se cree guay porque sac\xF3 una escalera y la puso en la terraza"
     - "Pero en verdad lo hizo para fumarse los porros donde nosotres no nos quej\xE1ramos"
     - "Si quieres salir hay un ventanal detr\xE1s de la mesa donde Guille se pasa
       el d\xEDa sentado"
@@ -7702,6 +7702,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231005378}
   m_CullTransparentMesh: 1
+--- !u!1 &1238104041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238104043}
+  - component: {fileID: 1238104042}
+  m_Layer: 0
+  m_Name: Audio Source musica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1238104042
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238104041}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -4847188409838147491, guid: 590424242e57e484480b7a6fe17970ad, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 043d47fb412821549ac05474b6252a38, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1238104043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238104041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 790.90533, y: 479.21338, z: -5.4780846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264238606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,7 +8969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1363679152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11517,9 +11645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2064116d0955ec140a856e64e84e698b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FuenteDialogos: {fileID: 0}
+  FuenteDialogos: {fileID: 1514343503}
   FuenteEfectos: {fileID: 0}
-  FuenteMusica: {fileID: 0}
+  FuenteMusica: {fileID: 1238104042}
   LowPitchRange: 0.95
   HighPitchRange: 1.05
 --- !u!4 &1613057560
@@ -12130,7 +12258,7 @@ MonoBehaviour:
     - Ya te vale
     - Que el capullo del guille te mande a hacer recados por que no se quiere levantar
       de la silla
-    - No es excusa para que me des por saco
+    - no es excusa para que me des por saco
     - "D\xE9jame ostia"
     voces: []
   autoCarga: 1
@@ -14111,7 +14239,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14641,11 +14769,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogo:
-    nombrePersonaje: Pili
+    nombrePersonaje: Guille
     modoDialogo: 3
     posicionVector: 1
     frases:
-    - Illo que borde e mi colega a vece
+    - Illo que borde e' mi colega a vece'
     - "Detr\xE1s mia tienes p\xE1 sal\xED pafuera"
     - Suerte
     voces: []
@@ -15130,3 +15258,4 @@ SceneRoots:
   - {fileID: 784185939}
   - {fileID: 1514343504}
   - {fileID: 1112474990}
+  - {fileID: 1238104043}

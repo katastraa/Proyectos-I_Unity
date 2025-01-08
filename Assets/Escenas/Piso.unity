@@ -847,7 +847,9 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 9
     frases:
-    - "No necesito sal\xEDr a la calle ahora mismo"
+    - No necesito salir a la calle ahora mismo.
+    - Voy a asomarme por las ventanas de mi piso,
+    - "por alguna se tendr\xE1 que ver el cielo"
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -4017,7 +4019,7 @@ MonoBehaviour:
     - ...
     - "Desde aqu\xED no puedo ver nada"
     - "Ese edificio lleva abandonado una pila de a\xF1os"
-    - A ver si hacen ya algo con el
+    - "A ver si hacen ya algo con \xE9l"
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -7587,9 +7589,9 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 5
     frases:
-    - Eso parece luz...
+    - Eso parece una luz...
     - Pero no distingo nada
-    - "\xBFYo ten\xEDa una ventana en la ba\xF1era?"
+    - "Voy a asomarme desde la ventana de la ba\xF1era"
     voces: []
   autoCarga: 1
   autoDesactivar: 0
@@ -8217,8 +8219,8 @@ MonoBehaviour:
     modoDialogo: 3
     posicionVector: 3
     frases:
-    - Mmmmm
-    - "Aqu\xED tampoco se v\xE9 nada..."
+    - Mmm...
+    - "Aqu\xED tampoco se ve nada..."
     - "\xBFA lo mejor desde la ventana de mi cuarto?"
     voces: []
   autoCarga: 1

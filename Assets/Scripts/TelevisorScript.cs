@@ -76,7 +76,7 @@ public class TelevisorScript : MonoBehaviour
     public void Restar()
     {
 
-        canal = (canal == 1) ? 10 : canal - 1;
+        canal = (canal == 1) ? 5 : canal - 1;
         
         ActualizarCanal();
     }
