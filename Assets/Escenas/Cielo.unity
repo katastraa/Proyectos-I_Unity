@@ -2411,7 +2411,7 @@ MonoBehaviour:
     - Ya he arreglado la antena
     - Bueno, la he desenchufado
     - "As\xED ya no nos llegan m\xE1s cosas raras por la televisi\xF3n"
-    - Todo para ver al Antony Flags haciendo el lumbrera
+    - Todo para ver al Peter Dinklage haciendo el lumbrera
     - "Bueno, ya que estamos hablando te quer\xEDa comentar una cosa"
     - "He visto un piso a las afueras que es mucho m\xE1s barato que este"
     - No tiene problemas de infraestructura
@@ -2852,7 +2852,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150387870}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d69b88c9d2d7e73418ee37f568cf0893, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: cffc1383ecb10f34e8e5e37b66f183f7, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2862,7 +2862,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 1
+  m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
